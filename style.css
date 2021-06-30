@@ -27,17 +27,27 @@
   left: 300px;
   border-radius: 100%;
   filter:grayscale(100%) ;
-
 }
 .cis-text{
   position:absolute;
   top: 120px;
   left:475px ;
   font-size: 130px;
-  
   font-family:'Orbitron', sans-serif;;
-
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
 }
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0c0e8a, 0 0 40px #1904d4, 0 0 50px #4c14e4, 0 0 60px #075af3, 0 0 70px #0804eb;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(9, 204, 238), 0 0 30px #0a8ce4, 0 0 40px #0b57e6, 0 0 50px #0587d3, 0 0 60px #2805eb, 0 0 70px #320ae2, 0 0 80px #ff4da6;
+  }
+}
+
 
 .login{
   position:absolute;
@@ -68,6 +78,7 @@
   border-radius: 10px;
   border-color: black;
   padding: 10px 90px 5px 5px;
+  
 }
 .password{
   position: absolute;
@@ -80,19 +91,22 @@
   padding: 10px 90px 5px 5px;
   
 }
-.login-button{
+.button {
   position: absolute;
-  margin-left: 100px;
-  left: 80px;
-  right: 200px;
-  top: 220px;
+  padding: 5px 25px;
+  top: 200px;
+  right: 10px;
+  font-size: 15px;
   font-family: 'Rajdhani', sans-serif;
-  padding: 5px 40px 5px 40px;
-  text-align:center;
-  border-style:ridge rgba(0, 0, 243, 0.952);
-  border-width: 0px;
-  border-radius: 10%;
-  background-color: rgba(0, 0, 255, 0.294);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(22, 7, 233);
+  background-color: #1588bd;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 <!-- not included in html
