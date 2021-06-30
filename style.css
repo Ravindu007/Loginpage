@@ -11,9 +11,9 @@
 
 
 .login-part{
-  width: 70%;
+  width: 100%;
   height: auto;
-  background-color: aqua;
+  background-image: linear-gradient(to right, rgb(2, 2, 83) ,white);
   float: left;
   position: relative;
   padding-left: 350px;
@@ -21,15 +21,33 @@
   
 }
 
+.login-part img{
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  border-radius: 100%;
+  filter:grayscale(100%) ;
+
+}
+.cis-text{
+  position:absolute;
+  top: 120px;
+  left:475px ;
+  font-size: 130px;
+  
+  font-family:'Orbitron', sans-serif;;
+
+}
+
 .login{
   position:absolute;
   top: 300px;
-  left: 270px;
+  left: 450px;
   border-radius: 10%;
-  background-color: rgba(51, 24, 173, 0.507);
+  background-color: rgba(240, 233, 233, 0.63);
   border:1px ;
   padding: 150px 150px 120px 120px;
-  box-shadow: 8px 10px rgb(14, 140, 156);
+  box-shadow: 8px 10px rgba(2, 2, 83, 0.781);
 
 }
 
@@ -48,6 +66,7 @@
   top: 45px;
   border-style: ridge ;
   border-radius: 10px;
+  border-color: black;
   padding: 10px 90px 5px 5px;
 }
 .password{
@@ -57,6 +76,7 @@
   top: 120px;
   border-style: ridge ;
   border-radius: 10px;
+  border-color: black;
   padding: 10px 90px 5px 5px;
   
 }
@@ -69,11 +89,13 @@
   font-family: 'Rajdhani', sans-serif;
   padding: 5px 40px 5px 40px;
   text-align:center;
-  border-style:ridge blue;
+  border-style:ridge rgba(0, 0, 243, 0.952);
+  border-width: 0px;
   border-radius: 10%;
   background-color: rgba(0, 0, 255, 0.294);
 }
 
+<!-- not included in html
 .right-part{
   position: relative;
   height: 800px;
