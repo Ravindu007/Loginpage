@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-   box-sizing: border-box; 
-   font-family: 'Rajdhani', sans-serif;
+  box-sizing: border-box; 
+  font-family: 'Rajdhani', sans-serif;
  }
  .clearfix:after{
   content: "";
@@ -12,8 +12,9 @@
 
 
 .login-part{
+  margin: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   //background-image: linear-gradient(to left, rgb(2, 2, 83) ,white);
   float: left;
   position: relative;
@@ -23,13 +24,15 @@
 }
 
 .menu{
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   background-color: #0b3074;
+  opacity: 0.9;
   padding: 20px 100% 20px 0px;
-  
-}
+  color: white;
+ }
+
 .logoimg{
   position:absolute;
   top: 0px;
@@ -62,7 +65,7 @@
 .cis-text{
   position:absolute;
   top: 180px;
-  left:475px ;
+  left:515px ;
   font-size: 130px;
   font-family:'Orbitron', sans-serif;;
   color: rgba(33, 9, 100, 0.924);
@@ -83,12 +86,13 @@
 .login{
   position:absolute;
   top: 320px;
-  left: 460px;
+  left: 500px;
   border-radius: 10%;
-  background-color: rgba(240, 233, 233, 0.918);
+  background-color: rgba(145, 198, 248, 0.863);
   border:1px ;
   padding: 150px 150px 120px 120px;
   box-shadow: 8px 10px rgba(2, 2, 83, 0.781);
+  
 }
 
 .login-text{
